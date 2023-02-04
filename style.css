@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+:root{
+/*Primary*/
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+/*Neutral*/
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+body{
+background-color: var(--Light-Gray);
+font-family: 'Karla', 'sans-serif';
+font-size: 16px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+margin: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-areas: "t t" "l r";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .9fr 1fr;
+    max-width: 600px;
+}
+
+.box-top{
+    grid-area: t;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: left;
+    padding: 1.3em;
+    max-width: 600px;
+    border-top-right-radius: 0.313rem;
+    border-top-left-radius: 0.313rem;
+}
+
+.box-left{
+    grid-area: l;
+    background-color: rgb(46, 170, 170);
+    text-align: left;
+    padding: 1.6em;
+    box-sizing: content-box;
+    border-bottom-left-radius: 0.313rem;
+}
+
+.box-right{
+    grid-area: r;
+    background-color:rgba(84, 187, 187, 0.986);
+    text-align: left;
+    padding: 1.3em;
+    box-sizing: content-box;
+    border-bottom-right-radius: 0.313rem;
+}
+
+.container .box-top h3{
+    padding-top: 1.3em;
+    color: var(--Cyan);
+}
+
+.container .box-top h4{
+    color: var(--Bright-Yellow)
+}
+
+.container .box-top small{
+    color: var(--Grayish-Blue)
+}
+
+.container .box-left h4{
+    color: white;
+}
+
+.container .box-left b{
+    color: white;
+    font-size: 30px;
+}
+
+.container .box-left small{
+    color:rgba(247, 247, 247, 0.63);
+    text-align: center;
+}
+
+.container .box-left p{
+    padding-top: .7em;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 14px;
+}
+
+.container .box-left button{
+    background-color: var(--Bright-Yellow);
+    color: white;   
+    border: none;
+    border-radius: 0.313rem; 
+    padding: 0.938rem 6.25rem;
+    cursor: pointer;
+    box-shadow: 0.313rem 0.313rem 0.313rem  rgb(0, 0, 0, 0.4);
+}
+
+.container .box-left button:hover{
+    background-color: hsl(71, 67%, 48%)
+}
+
+.container .box-right b{
+    color: white;
+}
+
+.container .box-right p{
+    color: rgba(255, 255, 255, 0.774);
+    padding-top: 0.1em;
+    font-size: 14px;
+}
+
+
+
+@media  screen and (max-width: 375px) {
+    .container{
+        grid-template-areas: "t" "l" "r";
+    }
+}
