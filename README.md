@@ -4,11 +4,12 @@
 
 ## Welcome! 👋
 ## Preview Site
-- [Netlify](single-pricegrid-comp.netlify.app)
+- [Netlify](https://single-pricegrid-comp.netlify.app/)
 
 ## Challenge caught in Frontend Mentor.
 
 [FrontEndMentor](https://www.frontendmentor.io)
+
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
