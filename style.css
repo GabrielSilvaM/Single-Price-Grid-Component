@@ -129,5 +129,6 @@ margin: 1rem;
 @media  screen and (max-width: 375px) {
     .container{
         grid-template-areas: "t" "l" "r";
+        grid-template-columns: 1fr;
     }
 }
